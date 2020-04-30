@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>Last Colony</title>
-</head>
+  </head>
 
-<body>
-    <div id="gamecontainer"></div>
+  <body>
+    <div id="gamecontainer">
+      <div id="gameinterfacescreen" class="gamelayer">
+        <div id="gamemessages"></div>
+        <div id="callerpicture"></div>
+        <div id="cash"></div>
+        <div id="sidebarbuttons"></div>
+        <canvas id="gamebackgroundcanvas" height="400" width="480"></canvas>
+        <canvas id="gameforegroundcanvas" height="400" width="480"></canvas>
+      </div>
+    </div>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>

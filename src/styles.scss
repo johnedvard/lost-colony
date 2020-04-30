@@ -3,4 +3,13 @@
     height:480px;
     background: gray;
     border: 1px solid black;
+    #gameinterfacescreen {
+        canvas{
+            position:absolute;
+            top:79px;
+            left:0px;
+        }
+        #foregroundcanvas{ z-index:1;}
+        #backgroundcanvas{ z-index:0;}
+    }
 }

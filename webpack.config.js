@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     entry: './src/index.ts',
-    devtool: 'inline-source-map',   
+    devtool: 'inline-source-map',
     module: {
         rules: [
             {
@@ -23,6 +23,11 @@ module.exports = {
                 use: [ 'file-loader' ]
             },
         ],
+    },
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 9000
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js', '.scss'],

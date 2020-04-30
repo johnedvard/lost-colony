@@ -1,4 +1,4 @@
- import HelloWorld from "./maps/hello-world.png";
+import HelloWorld from "./maps/hello-world.png";
 
 const maps = {
   singleplayer: [
